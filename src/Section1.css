@@ -1,0 +1,34 @@
+.section1 {
+  width: 100vw;
+  height: 60vw;
+}
+
+.section1-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1vw;
+  font-weight: 700;
+}
+
+
+.section1-text h1 {
+  font-size: 3.215vw;
+  color: #000000;
+}
+
+.section1-text p {
+  font-size: 1.358vw;
+  color: #000000;
+}
+
+.video {
+  display: flex;
+  justify-content: center;  
+}
+
+.video video {
+  width: 68.333vw;
+  height: 38.333vw;
+  border-radius: 2.292vw;
+}

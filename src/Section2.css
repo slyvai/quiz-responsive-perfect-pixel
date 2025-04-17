@@ -1,0 +1,40 @@
+.section2 {
+  width: 112.5vw;
+  height: 48.25vw;
+  margin: 2.2vw;
+}
+
+.section2-text {
+  font-size: 1.5vw;
+}
+
+.section2-swiper img {
+  border-radius: 1vw;
+  width: 17.625vw;
+  height: 35.99vw;
+  margin-top: 5.5vw;
+}
+
+.image-container {
+  position: relative; 
+}
+
+.image-container img {
+  display: block; 
+  height: auto; 
+}
+
+.image-text {
+  position: absolute; 
+  top: 0; 
+  margin: 2vw;
+  font-size: 0.833vw; 
+  color: white;
+}
+
+.image-text1 {
+  position: absolute; 
+  top: 0; 
+  margin: 2vw;
+  font-size: 0.833vw; 
+}
