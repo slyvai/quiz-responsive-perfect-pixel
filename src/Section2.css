@@ -10,9 +10,13 @@
 
 .section2-swiper img {
   border-radius: 1vw;
-  width: 17.625vw;
-  height: 35.99vw;
+  width: 15.625vw;
+  height: 30.99vw;
   margin-top: 5.5vw;
+}
+
+.section2-swiper {
+  width: 97vw;
 }
 
 .image-container {
@@ -37,4 +41,18 @@
   top: 0; 
   margin: 2vw;
   font-size: 0.833vw; 
+}
+
+.swiper-button-container {
+  display: flex; 
+  justify-content: end; 
+  align-items: center; 
+  margin: 2vw; 
+}
+
+.swiper-button-container img {
+  width: 2vw; 
+  height: 2vw; 
+  margin: 0 0.4vw;
+  cursor: pointer;
 }

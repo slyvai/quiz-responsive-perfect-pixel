@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import "./Section2.css";
@@ -10,6 +11,8 @@ import Swiper3 from "./assets/swiper3 1.png";
 import Swiper4 from "./assets/swiper4 1.png";
 import Swiper5 from "./assets/swiper5 1.png";
 import Swiper6 from "./assets/swiper6 1.png";
+import ArrowNext from "./assets/Group 8.png";
+import ArrowPrev from "./assets/Group 9.png";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -59,8 +62,14 @@ function Section2() {
           className="section2-swiper"
         >
           <Swiper
-            spaceBetween={10}
-            slidesPerView={5.87}
+            modules={[Navigation]}
+            spaceBetween={60}
+            slidesPerView={5.4}
+            navigation = {{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            pagination={{ clickable: true }}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
           >
@@ -131,6 +140,10 @@ function Section2() {
                 </div>
               </div>
             </SwiperSlide>
+            <div className="swiper-button-container">
+            <div className="swiper-button-prev"><img src={ArrowPrev} alt="" /></div>
+            <div className="swiper-button-next"><img src={ArrowNext} alt="" /></div>
+            </div>
           </Swiper>
         </div>
       </div>
